@@ -26,16 +26,7 @@ router.get('/leituras', async (req, res) => {
   }
 });
 
-/*
-  ROTA 2
-  Buscar leituras de uma data específica
 
-  Formato esperado da data:
-  YYYY-MM-DD
-
-  Exemplo:
-  GET http://localhost:3000/leituras/data/2026-05-11
-*/
 router.get('/leituras/data/:data', async (req, res) => {
   try {
     const { data } = req.params;
